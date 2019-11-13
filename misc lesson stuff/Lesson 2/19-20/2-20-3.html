@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snake Eyes</title>
+    </head>
+    <body>
+		<script>
+			var rollOne = Math.floor(Math.random() * 6) + 1;
+			var rollTwo = Math.floor(Math.random() * 6) + 1;
+			function start(){
+				while(true){
+					document.write(rollOne +"," +rollTwo);
+						if(rollOne+rollTwo==2){
+							break;
+						}
+				}
+			}
+			start()
+		</script>
+    </body>
+</html>

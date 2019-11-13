@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>boolean 2</title>
+    </head>
+    <body>
+    <script>
+		function start(){
+		var weekend = prompt("is it the weekend?");
+		requirements = (weekend=="no");
+		var holiday = prompt("is it a holiday?");
+		holiday = (holiday=="no");
+		var schoolOut= (holiday||weekend);
+		document.write("is school out? " + schoolOut);
+		}
+		start();
+		</script>
+    </body>
+</html>

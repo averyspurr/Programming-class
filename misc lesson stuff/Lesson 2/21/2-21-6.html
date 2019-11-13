@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+  <body data-rsssl=1>
+    <canvas id="myCanvas" width="500" height="500" style= "border:1px solid #d3d3d3;"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+function start(){
+stopLight();
+}
+
+function stopLight(){
+      context.beginPath();
+      context.rect(150, 50, 150, 300);
+      context.fillStyle = 'gray';
+      context.fill();
+      context.lineWidth = 7;
+      context.strokeStyle = 'dark-gray';
+      context.stroke();
+
+      context.beginPath();
+      context.arc(225, 100, 40, 0, 2 * Math.PI, false);
+      context.fillStyle = 'red';
+      context.fill();
+      context.lineWidth = 5;
+      context.strokeStyle = '#003300';
+      context.stroke();
+	  
+	  context.beginPath();
+      context.arc(225, 200, 40, 0, 2 * Math.PI, false);
+      context.fillStyle = 'yellow';
+      context.fill();
+      context.lineWidth = 5;
+      context.strokeStyle = '#003300';
+      context.stroke();
+	  
+	  context.beginPath();
+      context.arc(225, 300, 40, 0, 2 * Math.PI, false);
+      context.fillStyle = 'chartreuse';
+      context.fill();
+      context.lineWidth = 5;
+      context.strokeStyle = '#003300';
+      context.stroke();
+}
+start();
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Basic Snake</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://static.codehs.com/gulp/7666c7e4765f71aa338f37e94853d4cc7ed720a0/chs-js-lib/chs.js"></script>
+
+
+<style>
+canvas {
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+</style>
+
+</head>
+
+<body>
+<h1>Basic Snake</h1>
+
+
+
+<canvas
+width="400"
+height="500"
+class="codehs-editor-canvas"></canvas>
+
+<script>
+window.onload = function() {
+    var SNAKE_WIDTH = 40;
+var SNAKE_HEIGHT = 40;
+var SNAKE_COLOR = Color.green;
+var snake = new Rectangle(40, 40)
+
+var dx;
+var dy;
+
+// Constants to represent the directions
+
+var EAST = 0;
+var SOUTH = 1;
+var WEST = 2;
+var NORTH = 3;
+
+function start(){
+
+snake.move(dx, dy);
+}
+
+
+function up(e){
+dx = 0;
+dy = (-4);
+}
+
+function down(e){
+dx = 0;
+dy = 4;
+}
+
+function left(e){
+snake.move((-4), 0);
+}
+
+function right(e){
+snake.move(4, 0);
+}
+
+    if (typeof start === 'function') {
+        start();
+    }
+};
+</script>
+
+</body>
+</html>

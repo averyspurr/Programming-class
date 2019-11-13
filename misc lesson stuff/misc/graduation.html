@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>boolean 2</title>
+    </head>
+    <body>
+    <script>
+		function start(){
+		var requirements = prompt("have you met the requirements?");
+		requirements = (requirements== "true");
+		var credits = prompt("do you have enough ccredits?");
+		credits = (credits== "true");
+		var graduate= credits&&requirements;
+		document.write("can graduate? " + graduate);
+		}
+		start();
+		</script>
+    </body>
+</html>

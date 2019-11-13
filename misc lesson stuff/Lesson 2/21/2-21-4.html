@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FEET TO METERS	</title>
+    </head>
+    <body>
+		<script>
+			function start(){
+				var feet = prompt("How many feet?");
+				var inches = prompt("How many inches?");
+				feetToMeters(feet, inches);
+			}
+			
+			function feetToMeters(feet, inches){
+				var total = (feet * 12) + inches;
+				var meters = (total * 2.54) / 100;
+				document.write("Your distance is " + meters + ".");
+			}
+			start();
+		</script>
+    </body>
+</html>

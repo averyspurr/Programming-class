@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<canvas id="myCanvas" width="500" height="500" style="border:1px solid #d3d3d3;">
+		</canvas>
+
+		<script>
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			
+			function start(){
+				var yPos = prompt("What do you want the y position to be?");
+				horizontalLines(yPos);
+			}
+			function horizontalLines(x){
+
+				ctx.beginPath();
+				ctx.moveTo(0, x);
+				ctx.lineTo(500, x);
+				ctx.stroke();
+			}
+		start();	
+		</script>
+	</body>
+</html>

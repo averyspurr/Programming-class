@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Moving Ball</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://static.codehs.com/gulp/7666c7e4765f71aa338f37e94853d4cc7ed720a0/chs-js-lib/chs.js"></script>
+
+
+<style>
+canvas {
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+</style>
+
+</head>
+
+<body>
+<h1>Moving Ball</h1>
+
+
+
+<canvas
+width="400"
+height="500"
+class="codehs-editor-canvas"></canvas>
+
+<script>
+window.onload = function() {
+    var ball;
+function start(){
+	ball = new Circle(20);
+	add(ball);
+	
+	setTimer(draw, 20);
+}
+function draw(){
+	circle.setColor(Randomizer.nextColor());
+	ball.move((Math.floor(Math.random() * 400)) , (Math.floor(Math.random() * 500)));
+	
+}
+    if (typeof start === 'function') {
+        start();
+    }
+};
+</script>
+
+</body>
+</html>

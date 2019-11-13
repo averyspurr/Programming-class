@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All Star</title>
+    </head>
+    <body>
+	<script>
+		function start(){
+			var points = prompt("How many points did you score?");
+			var rebounds = prompt("How many rebounds did you make?");
+			var assists = prompt("How many assists did you make?");
+			var allStar = ((points>=25) || ((points>=10) && (rebounds>=10) && (assists>=10)))
+			document.write("are you an allstar player? " +allStar);
+		}
+		start();
+	</script>
+    </body>
+</html>
